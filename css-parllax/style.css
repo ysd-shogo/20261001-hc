@@ -1,0 +1,113 @@
+@charset "utf-8";
+@import "https://unpkg.com/ress/dist/ress.min.css";
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    min-width: 1000px;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1;
+}
+
+/* セクション共通のスタイル */
+section { 
+    /* セクションの幅・高さ */
+    width: 100%;
+    height: 100vh;
+    /* セクション内の整列 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* セクションの背景画像 */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* セクション内のテキスト */
+    color: white;
+    text-shadow: 2px 2px #333;
+}
+/* 奇数のセクション共通スタイル */
+section:nth-of-type(odd) {
+    background-color: tomato;
+}
+
+/* コンテンツを中央に配置 */
+.inner {
+    width: 800px;
+    min-height: 300px;
+    margin: auto;
+    /* 確認用 */
+    background-color: #eee;
+}
+
+/* 見出しと文章 */
+h1 {
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    letter-spacing: 4px;
+    text-shadow: 3px 3px 1px #333;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 1em;
+}
+
+section p {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+/* 画像のスタイル */
+section img {
+    max-width: 100%;
+}
+
+/*-------------------------
+/*	ページトップのスタイル
+-------------------------*/
+#page-top {
+    background-image: url(https://placehold.jp/ff6347/ffffff/1200x800.png?text=page-top);
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.my-name {
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+    font-size: 30px;
+}
+
+/*-------------------------
+/*	ページ01
+-------------------------*/
+#page-01 {
+    background-image: url(https://placehold.jp/90ee90/ffffff/1200x800.png?text=page-01);
+}
+/*-------------------------
+/*	ページ02
+-------------------------*/
+#page-02 {
+    background-image: url(https://placehold.jp/87ceeb/ffffff/1200x800.png?text=page-02);
+}
+/*-------------------------
+/*	ページ03
+-------------------------*/
+#page-03 {
+    background-image: url(https://placehold.jp/eeeec9/ffffff/1200x800.png?text=page-03);
+}
+/*-------------------------
+/*	ページ04
+-------------------------*/
+#page-04 {
+    background-image: url(https://placehold.jp/d2691e/ffffff/1200x800.png?text=page-04);
+}
